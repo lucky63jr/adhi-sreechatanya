@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="background-color:blue;color:black">NESTED IF CONDITION</h1>
+    {% if a > b %}
+        {% if a > c %}
+            <h2>{{a}} is max</h2>
+        {% else %}
+            <h2>{{c}} is max</h2>
+        {% endif %}
+    {% else %}
+        {% if b > c %}
+            <h2>{{b}} is max</h2>
+        {% else %}
+            <h2>{{c}} is max</h2>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
